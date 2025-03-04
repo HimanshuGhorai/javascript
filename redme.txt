@@ -1,0 +1,11 @@
+*-> what is javaScript?
+ ==> javaScript is a Programming Language. Improve the User Exprience of the Webpage 
+     and convartiong it form a static Webpage to Intetactive one.
+     
+     or
+    
+    javaScript is used to Update and Change Both HTML and it add behavior to Webpage.
+
+
+
+    
