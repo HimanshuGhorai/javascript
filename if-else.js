@@ -16,6 +16,7 @@ message saying they are not eligible due to registration status.
 Extended voting eligibility checker with additional conditions
 */
 
+/*
 var age = 8;
 var isCitizen = true;
 var registered = false;
@@ -32,4 +33,50 @@ if (age >= 18) {
   }
 } else {
   console.log("are not eligible to vote because of age ");
+}
+
+*/
+// ! 1: Write a program to check if a number is even or odd.
+
+// var number = 12;
+
+// if (number % 2 === 0 ){
+//   console.log(`this is even number`);
+
+// }else{
+//   console.log(`htis is odd number`);
+
+// }
+
+// ! 2 : Write a program to check if a number is prime.
+
+// ! 3: Write a program to check if a number is positive, negative, or zero.
+
+var num = -1;
+
+// ====> this is one methode of solution this 
+
+// if (num >= 0) {
+//   if (num > 0) {
+//     console.log(`this number is positive`);
+//   } else {
+//     console.log(`htis number is zero `);
+//   }
+// } else {
+//   console.log(`htis number is negitive `);
+// }
+
+
+// this is the othor wey 
+
+if (num === 0){
+  console.log(`thsi number is zero `);
+  
+}else if (num > 0 ){
+
+  console.log(`thsi is positive number `);
+  
+}else {
+  console.log(`this number is nagitive`);
+  
 }
