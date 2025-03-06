@@ -140,8 +140,66 @@
 to drive based on their age being greater than or equal to 18
 and havin a valid driver's license ? */
 
-var age = 18;
-var headDrivinglinces = true;
-// age > 18
-// age == 18
-console.log(age >= 18 && headDrivinglinces == true);    //output true
+// var age = 18;
+// var headDrivinglinces = true;
+// // age > 18
+// // age == 18
+// console.log(age >= 18 && headDrivinglinces == true);    //output true
+
+
+// var age = 8;
+
+// var rusult = age >= 18 ?"yes he or she can be drive":"no he or she can't be drive";
+// console.log(rusult);
+
+
+
+// control statement and loops in javascript
+
+// if statement
+// var tumperture  = 40;
+// if (tumperture > 30 )
+// {
+//     console.log("let's go to a baech");
+// } else {
+//     console.log("watch a movie");
+// }
+
+// ? We can also use an else if clause to check additional conditions:
+
+// var tumperture = 20;
+// if (tumperture >= 30)
+// {
+//     console.log("let's go to a beach");
+// } else if (tumperture > 20 && tumperture < 30) {
+//     console.log("let's go to a park");
+// } else {
+//     console.log("watch a movie");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if else statement
+
+
+
+
+
+
+// switch statement
+// for loop
+// while loop
+// do while loop    //do while loop is always execute at
+//for in for of loop
+
