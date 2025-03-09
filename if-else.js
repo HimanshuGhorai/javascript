@@ -141,3 +141,5 @@ switch (areaOfshapes) {
 }
 
 console.log(areaOfshapes);
+
+

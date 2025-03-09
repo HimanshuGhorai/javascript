@@ -87,3 +87,51 @@
 //     console.log(`it is not a leap year`);
     
 // }
+
+
+
+
+
+
+// **==> 50 qustions about loops 
+
+/* 
+loops 
+
+----> for loop 
+----> while loop 
+----> do-while loop 
+----> for in loop 
+----> for of loop 
+*/
+
+// 50 qustino 
+
+// 1> print 1 -10 number using for loop ?
+
+// for (var i = 0 ; i <= 10 ; i++){
+//     console.log(i);
+    
+// }
+// The loop starts at 1 (i = 1).
+// It runs while i <= 10.
+// It increments i by 1 (i++) each time.
+
+// 2> Print numbers from 1 to 10 using a while loop.
+
+// var num = 0
+// while (num <= 100) {
+// console.log( num ,"num") ;
+//     num++
+// }
+
+//The loop runs while num is less than or equal to 10.
+//num++ increases num by 1 in each iteration.
+
+// 3️> Print numbers from 1 to 10 using a do-while loop.
+
+// do{
+//     var i = 0
+// i++
+// console.log(i);
+// }while(i <= 10 )
