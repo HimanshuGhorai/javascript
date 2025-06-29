@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <h1>this is inline javaScript</h1>
+    <button onclick="alert(`this is a alert`)" > show alert</button> /* this is a inline javaScript */
+    <br><button onclick="console.log(`this is a console log`)" > show console log</button> /* this is a inline javaScript */
+   <br> <button onclick="document.write(`this is a document write`)" > show document write</button> /* this is a inline javaScript */
+   <br> <button onclick="document.getElementById('demo').innerHTML = `this is a innerHTML`" > show innerHTML</button> /* this is a inline javaScript */
+   
+   
+    <br><p id="demo">some demo content</p>
+    <br><button onclick="document.getElementById('demo').style.color = 'red'">change color</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.fontSize = '30px'">change font size</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.display = 'none'">hide</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.display = 'block'">show</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.display = 'inline'">show inline</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.display = 'inline-block'">show inline block</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.display = 'flex'">show flex</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.display = 'grid'">show grid</button> /* this is a inline javaScript */
+    <br><button onclick="document.getElementById('demo').style.display = 'table'">show table</button> /* this is a inline javaScript */
+
+
+
+
+    <!-- // this is a inline javaScript end-->
+
+
+
+    <!-- // this is a internal  javaScript -->
+     <script>
+        // alert(`this is a alert`)
+        console.log(`this is a console log`)
+        document.write(`this is a document write`)
+        document.getElementById('demo').innerHTML = `this is a innerHTML`
+        document.getElementById('demo').style.color = 'red'
+        document.getElementById('demo').style.fontSize = '30px'
+        document.getElementById('demo').style.display = 'none'
+        document.getElementById('demo').style.display = 'block'
+        document.getElementById('demo').style.display = 'inline'
+        document.getElementById('demo').style.display = 'inline-block'
+        document.getElementById('demo').style.display = 'flex'
+        document.getElementById('demo').style.display = 'grid'
+        document.getElementById('demo').style.display = 'table'
+     </script>
+     
+
+
+     <script src="./script.js" ></script>
+</body>
+</html>
