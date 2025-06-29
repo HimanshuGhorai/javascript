@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myntra bag</title>
+    <style>
+      #button1 {
+        margin: 20px 10px;
+        font-size: 16px;
+        border: none;
+        background-color: #a1e09b;
+        border-radius: 20px;
+        padding: 10px 35px;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      .button2 {
+        font-size: 16px;
+        border: 2px solid black;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 10px 35px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      id="button1"
+      onclick="cartQuantity++;
+     document.querySelector(
+        '#cart-summary').innerHTML = `your bag has ${cartQuantity} items`;"
+    >
+      add to bag
+    </button>
+    <button
+      class="button2"
+      onclick="cartQuantity--;document.querySelector(
+        '#cart-summary').innerHTML = `your bag has ${cartQuantity} items`;"
+    >
+      Move to Wishlist
+    </button>
+    <button
+      id="button1"
+      onclick="cartQuantity+=2;document.querySelector(
+        '#cart-summary').innerHTML = `your bag has ${cartQuantity} items`;"
+    >
+      add 1 + 1 sale item
+    </button>
+
+    <h1 id="cart-summary"></h1>
+
+    <script>
+      // let cartSummary = ;
+      let cartQuantity = 0;
+
+      //   document.querySelector('#cart-summary').innerHTML = 'your bag has '+ cartQuantity+' items';
+
+      document.querySelector(
+        "#cart-summary"
+      ).innerHTML = `your bag has ${cartQuantity} items`;
+
+      let pi = 3.14159265359;
+      let radius = 4;
+
+      
+    </script>
+  </body>
+</html>
