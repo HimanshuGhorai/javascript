@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <style>
+      /* this is style link  */
+
+      html,
+      body {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+      }
+      button {
+        font-size: 26px;
+        padding: 15px 30px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: rgb(120, 212, 208);
+        border: none;
+        border-radius: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bat ball stump Game</h1>
+
+    <button
+      onclick="
+// console.log('you have chonge bat');
+let rendomNumber = Math.random()*3;
+if(rendomNumber> 0 && rendomNumber <= 1){
+    let computerChoice = 'bat'
+    console.log(computerChoice);
+    
+ 
+}
+
+console.log(rendomNumber);
+
+
+"
+    >
+      Bat
+    </button>
+    <button>Ball</button>
+    <button>stump</button>
+
+    <!-- this si js file  -->
+    <script></script>
+  </body>
+</html>
