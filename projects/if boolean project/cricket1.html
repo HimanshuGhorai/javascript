@@ -6,13 +6,13 @@
     <title>Cricket Game</title>
     <style>
       /* this is style link  */
-
       html,
       body {
         background-color: black;
         color: #fff;
         text-align: center;
       }
+
       button {
         font-size: 26px;
         padding: 15px 30px;
@@ -24,29 +24,100 @@
       }
     </style>
   </head>
+
   <body>
     <h1>Bat ball stump Game</h1>
-
     <button
       onclick="
-// console.log('you have chonge bat');
-let rendomNumber = Math.random()*3;
-if(rendomNumber> 0 && rendomNumber <= 1){
-    let computerChoice = 'bat'
-    console.log(computerChoice);
-    
- 
-}
+     let computerChoice = undefined;
+      // this code is ganarate rendom number
+     let randomNumber = Math.random()*3;
+      //  console.warn(randomNumber);
+      if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice='Bat';
+      }else if(randomNumber > 1 && randomNumber <=2){
+        computerChoice = 'Ball';
+      }else{
+        computerChoice = 'stump';
+      }
+      console.warn(`computer choice is ${computerChoice}`);
+      let resultMsg;
+      if(computerChoice === 'Bat'){
+        resultMsg = (` It's a tie `);
+      }else if(computerChoice === 'Ball'){
+        resultMsg = (`user won `);
+      }else if(computerChoice ==='stump'){
+       resultMsg = (`computer as won `);
+      }        
+      // console.log(resultMsg);
+      alert(`You have chosen Bat. computer choice is ${computerChoice} and ${resultMsg}`);
 
-console.log(rendomNumber);
-
-
-"
+    "
     >
       Bat
     </button>
-    <button>Ball</button>
-    <button>stump</button>
+    <button
+      onclick="
+     randomNumber = Math.random()*3;
+     computerChoice;
+      if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice='Bat';
+      }else if(randomNumber > 1 && randomNumber <=2){
+        computerChoice = 'Ball';
+      }else{
+        computerChoice = 'stump';
+      }
+
+      console.warn(`computer choice is ${computerChoice}`);
+
+      // let resultMsg;
+      
+      if(computerChoice === 'Bat'){
+       resultMsg = (`computer as won `);
+
+      }else if(computerChoice === 'Ball'){
+        resultMsg = (` It's a tie `);
+
+      }else if(computerChoice ==='stump'){
+        resultMsg = (`user won `);
+
+      }        
+      // console.log(resultMsg);
+      alert(`You have chosen Ball. computer choice is ${computerChoice} and ${resultMsg}`);
+    "
+    >
+      Ball
+    </button>
+    <button
+      onclick="
+     randomNumber = Math.random()*3;
+     computerChoice;
+      if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice='Bat';
+      }else if(randomNumber > 1 && randomNumber <=2){
+        computerChoice = 'Ball';
+      }else{
+        computerChoice = 'stump';
+      }
+
+      console.warn(`computer choice is ${computerChoice}`);
+      
+      if(computerChoice === 'Bat'){
+       resultMsg = (`computer as won `);
+
+      }else if(computerChoice === 'Ball'){
+        resultMsg = (`user won `);
+        
+      }else if(computerChoice ==='stump'){
+        resultMsg = (` It's a tie `);
+
+      }        
+      // console.log(resultMsg);
+      alert(`You have chosen stump. computer choice is ${computerChoice} and ${resultMsg}`);
+    "
+    >
+      stump
+    </button>
 
     <!-- this si js file  -->
     <script></script>

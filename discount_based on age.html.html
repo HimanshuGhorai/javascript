@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>question if else & boolean</title>
+  </head>
+  <body>
+    <h1>
+      Give discount based on age, gender for metro ticket <br />
+      - Females get 50% off<br />
+      - Kids under 5 years of age are free<br />
+      - Kids up to 8 years have half ticket<br />
+      - People Over 65 years of age only pay 30% of the ticket <br />
+      - In case of multiple discounts max discount will apply.<br />
+    </h1>
+
+    <script>
+      // variable
+      let finalDiscount;
+      let gender = "female";
+      let age = 65;
+
+      if (age <= 5) {
+        finalDiscount = 100;
+      } else if (gender === "female" || age <= 8) {
+        finalDiscount = 50;
+      } else if (age >= 65) {
+        finalDiscount = 30;
+      } else {
+        finalDiscount = 0;
+      }
+
+      console.log(
+        `you age is ${age}. your gender is ${gender}. you final discount is ${finalDiscount}`
+      );
+    </script>
+  </body>
+</html>
