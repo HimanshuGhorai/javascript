@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <style>
+      /* this is style link  */
+      html,
+      body {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+      }
+
+      button {
+        font-size: 26px;
+        padding: 15px 30px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: rgb(120, 212, 208);
+        border: none;
+        border-radius: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Bat ball stump Game</h1>
+    <button
+      onclick="
+       let computerChoice = randomNumber();
+       resultMsg;
+      if(computerChoice === 'Bat'){
+        resultMsg = (` It's a tie `);
+      }else if(computerChoice === 'Ball'){
+        resultMsg = (`user won `);
+      }else if(computerChoice ==='stump'){
+       resultMsg = (`computer as won `);
+      }        
+
+      // console.log(resultMsg);
+      alert(`You have chosen Bat. computer choice is ${computerChoice} and ${resultMsg}`);
+
+      resultMsg;
+
+    "
+    >
+      Bat
+    </button>
+    <button
+      onclick="
+       computerChoice = randomNumber();
+
+      resultMsg;
+    
+      if(computerChoice === 'Bat'){
+       resultMsg = (`computer as won `);
+
+      }else if(computerChoice === 'Ball'){
+        resultMsg = (` It's a tie `);
+
+      }else if(computerChoice ==='stump'){
+        resultMsg = (`user won `);
+ 
+       }        
+      alert(`You have chosen Ball. computer choice is ${computerChoice} and ${resultMsg}`);
+    "
+    >
+      Ball
+    </button>
+    <button
+      onclick="
+       computerChoice = randomNumber();
+       resultMsg;
+      if(computerChoice === 'Bat'){
+        resultMsg = (`user won `);
+        
+      }else if(computerChoice === 'Ball'){
+        resultMsg = (`computer as won `);
+        
+      }else if(computerChoice ==='stump'){
+        resultMsg = (` It's a tie `); 
+
+      }        
+      // console.log(resultMsg);
+      alert(`You have chosen stump. computer choice is ${computerChoice} and ${resultMsg}`);
+    "
+    >
+      stump
+    </button>
+
+    <!-- this si js file  -->
+    <script>
+      let resultMsg;
+      function randomNumber() {
+        let randomNumber = Math.random() * 3;
+
+        let computerChoice;
+        if (randomNumber > 0 && randomNumber <= 1) {
+          computerChoice = "Bat";
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          computerChoice = "Ball";
+        } else {
+          computerChoice = "stump";
+        }
+        return computerChoice; // this is  important
+
+        console.warn(`computer choice is ${computerChoice}`);
+      }
+
+      function getResult(use){
+
+      }
+
+
+
+
+    </script>
+  </body>
+</html>
