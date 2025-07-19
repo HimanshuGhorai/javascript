@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <style>
+      /* this is style link  */
+      html,
+      body {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+      }
+
+      button {
+        font-size: 26px;
+        padding: 15px 30px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: rgb(120, 212, 208);
+        border: none;
+        border-radius: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Bat ball stump Game</h1>
+    <button
+      onclick="
+                let computerChoice = randomNumber();
+                resultMsg =getResult('Bat',computerChoice);
+                displayMsg('Bat',computerChoice,resultMsg);
+
+              "
+    >
+      Bat
+    </button>
+
+    <button
+      onclick="
+                computerChoice = randomNumber();
+                resultMsg =getResult('Ball',computerChoice);
+                displayMsg('Bat',computerChoice,resultMsg);
+
+              "
+    >
+      Ball
+    </button>
+    <button
+      onclick="
+                computerChoice = randomNumber();
+                resultMsg =getResult('stump',computerChoice);       
+                displayMsg('Bat',computerChoice,resultMsg);
+
+              "
+    >
+      stump
+    </button>
+
+    <!-- this si js file  -->
+    <script>
+      let score = {
+        win: 0,
+        lost: 0,
+        tie: 0,
+        displayMsg: function () {
+          return `You have chosen ${userMsg}. computer choice is ${computerMsg}
+          ${resultMsg}
+          win:${score.win} lost:${score.lost} tie:${score.tie}`;
+        },
+      };
+      // ============ displayMsg ===========
+
+      function displayMsg(userMsg, computerMsg, resultMsg) {
+        console.log(score);
+
+        alert(
+          `You have chosen ${userMsg}. computer choice is ${computerMsg}
+          ${resultMsg}
+          win:${score.win} lost:${score.lost} tie:${score.tie}`
+        );
+      }
+
+      let resultMsg;
+      // ============ randomNumber ===========
+      function randomNumber() {
+        let randomNumber = Math.random() * 3;
+        let computerChoice;
+        if (randomNumber > 0 && randomNumber <= 1) {
+          computerChoice = "Bat";
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          computerChoice = "Ball";
+        } else {
+          computerChoice = "stump";
+        }
+        return computerChoice; // this is  important
+
+        console.warn(`computer choice is ${computerChoice}`);
+      }
+
+      // ============ getResult ===========
+      function getResult(userMove, computerMove) {
+        resultMsg;
+        if (userMove === "Bat") {
+          if (computerMove === "Bat") {
+            score.tie++;
+            return ` It's a tie `;
+          } else if (computerMove === "Ball") {
+            score.win++;
+            return `user won `;
+          } else if (computerMove === "stump") {
+            score.lost++;
+            return `computer as won `;
+          }
+        } else if (userMove === "Ball") {
+          if (computerMove === "Ball") {
+            score.tie++;
+            return ` It's a tie `;
+          } else if (computerMove === "Bat") {
+            score.win++;
+            return `user won `;
+          } else if (computerMove === "stump") {
+            score.lost++;
+            return `computer as won `;
+          }
+        } else if (userMove === "stump") {
+          if (computerMove === "stump") {
+            score.tie++;
+            return ` It's a tie `;
+          } else if (computerMove === "Bat") {
+            score.win++;
+            return `user won `;
+          } else if (computerMove === "Ball") {
+            score.lost++;
+            return `computer as won `;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>json</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json</title>
   </head>
-
   <body>
-    <h1>json</h1>
+    <h1>Json</h1>
 
     <script>
-      console.log("himan");
 
-      let obj = {
-        name: "himanshu",
-        age: "23",
-        roll: "234",
+      let product = {
+        name: "T-Shirt",
+        price: 345,
         rating: {
-          stars: 5,
-          noOfReviews: 100,
+          stars: 4.5,
+          noOfReviews: 345,
         },
       };
-
-      console.log(obj);
-      let str = JSON.stringify(obj);
-      console.log(str);
+      console.log(product);
       
+
+      // console.log(typeof product);
+      // console.log(product);
+
+      // let str = JSON.stringify(product);
+      // console.log(str);
+      // console.log(typeof str);
+
+      // let newProduct = JSON.parse(str);
+      // console.log(newProduct);
+
+      // localStorage.setItem("name", "himu");
+      // localStorage.setItem("age", "23");
+
+      // console.log(localStorage.getItem("name"));
+
+      localStorage.setItem('product', JSON.stringify(product));
+      let prodect2 = JSON.parse(localStorage.getItem(product));
+
+      localStorage.clear();
+      console.log(prodect2);
+
+
+
     </script>
   </body>
 </html>
